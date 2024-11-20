@@ -17,7 +17,21 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+
+	"golang.org/x/tools/go/analysis"
 )
+
+var Analyzer = &analysis.Analyzer{
+	Name:     "presentationcheck",
+	Doc:      "presentation層のルールチェック",
+	Run:      run,
+	Requires: nil,
+}
+
+func run(pass *analysis.Pass) (interface{}, error) {
+	fmt.Println("aaa")
+	return nil, nil
+}
 
 // Analyze calculates the cyclomatic complexities of the functions and methods
 // in the Go source code files in the given paths. If a path is a directory
