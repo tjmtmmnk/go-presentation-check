@@ -9,5 +9,5 @@ import (
 
 func Test(t *testing.T) {
 	testdata := filepath.Join(analysistest.TestData())
-	analysistest.Run(t, testdata, Analyzer, "presentation")
+	analysistest.Run(t, testdata, Analyzer, "a/presentation")
 }

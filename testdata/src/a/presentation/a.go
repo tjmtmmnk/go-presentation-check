@@ -1,8 +1,8 @@
 package presentation
 
 import (
-	"repository"
-	"service"
+	"a/repository"
+	"a/service"
 )
 
 func valid() { // OK
